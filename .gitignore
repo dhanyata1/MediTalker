@@ -1,0 +1,38 @@
+# Ignore node_modules in both client and server
+/client/node_modules
+/server/node_modules
+
+# Ignore build files from React
+/client/build
+
+# Ignore environment files (sensitive data)
+/client/.env
+/server/.env
+
+# Ignore log files
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+
+# Ignore public uploads if necessary (optional)
+# Uncomment this if you have user-uploaded data you don't want in GitHub
+/server/public/uploads
+/client/public/uploads
+
+# Ignore NLP model file (large file, unnecessary in the repo)
+# You may want to include this based on your setup, but typically it's a good idea to exclude large model files
+/server/model.nlp
+
+# Ignore CSV dataset file (optional)
+/server/medicine_dataset.csv
+
+# Ignore build artifacts
+*.out
+*.map
