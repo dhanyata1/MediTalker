@@ -41,10 +41,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/MediTalke
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Failed to connect to MongoDB:', err));
 
-// Serve static files in the 'public/uploads' directory
-// app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 
-// Import routes
+    
 const authRoutes = require('./routes/auth');
 const medicineRoutes = require('./routes/medicineRoutes');
 const screenshotRoutes = require('./routes/screenshotRoutes');
@@ -53,6 +51,7 @@ const usersRoutes = require('./routes/users');
 const adminRoutes = require('./routes/adminRoutes');
 const contactRoutes = require('./routes/contactRoutes');
 const feedbackRoutes = require('./routes/feedbackRoutes');
+// const predictRoutes = require('./routes/predict');
 
 
 // Use routes
@@ -64,6 +63,7 @@ app.use('/api/users', usersRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/feedback', feedbackRoutes);
+// app.use('/api/predict', predictRoutes);
 
 // Serve client-side static files if in production
 if (process.env.NODE_ENV === 'production') {
