@@ -1,0 +1,137 @@
+/* Navbar Styles */
+.navbar {
+    background-color: white;
+    border-bottom: 2px solid #6a0dad;
+    /* Purple border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #6a0dad;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%235a189a' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(90, 24, 154, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: #6a0dad;
+    font-weight: 500;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #450a7e;
+    /* Darker purple on hover */
+}
+
+/* Buttons */
+.btn-outline-success {
+    color: #6a0dad;
+    border-color: #6a0dad;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-success:hover {
+    background-color: #6a0dad;
+    color: white;
+}
+
+.btn-outline-primary {
+    color: #450a7e;
+    border-color: #450a7e;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background-color: #450a7e;
+    color: white;
+}
+
+/* Profile Image */
+.navbar .d-flex img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #6a0dad;
+    transition: border 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.navbar .d-flex img:hover {
+    border-color: #450a7e;
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+}
+
+/* Modal Backdrop */
+.modal-backdrop.show {
+    background-color: rgba(106, 13, 173, 0.5);
+    /* Purple backdrop */
+}
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 1rem;
+        border-top: 2px solid #6a0dad;
+    }
+
+    .nav-link {
+        margin-right: 0;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+
+    .btn-outline-success,
+    .btn-outline-primary {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+
+.navbar .greeting {
+    font-size: 1.2rem;
+
+    font-weight: bold;
+
+    color: #4a4a4a;
+    /* Change the text color */
+    background-color: #f0f0f0;
+    /* Light background color */
+    padding: 10px 15px;
+    /* Add some padding */
+    border-radius: 20px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    cursor: pointer;
+    /* Change cursor to pointer */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.navbar .greeting:hover {
+    background-color: #e0e0e0;
+  
+}

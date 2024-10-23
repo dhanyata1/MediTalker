@@ -1,0 +1,66 @@
+/* Footer Styling */
+footer {
+    background-color: #ffffff;
+    color: #6a0dad;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #6a0dad;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #4b0082;
+    text-decoration: underline;
+}
+
+footer h5 {
+    color: #6a0dad;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer .ft {
+    background-color: #6a0dad;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+footer .container p,
+footer .container small {
+    color: #6a0dad;
+}
+
+footer .fab {
+    font-size: 1.5rem;
+    color: #6a0dad;
+    transition: color 0.3s ease;
+    margin-right: 1rem;
+}
+
+footer .fab:hover {
+    color: #4b0082;
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+footer .list-unstyled li a {
+    color: #6a0dad;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+footer .list-unstyled li a:hover {
+    color: #4b0082;
+    text-decoration: underline;
+}

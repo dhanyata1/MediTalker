@@ -1,0 +1,273 @@
+@keyframes upDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.img-updown {
+    animation: upDown 2s infinite;
+    width: 200px;
+    height: auto;
+}
+
+.carousel-inner {
+    max-height: 700px;
+    height: 30%;
+
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Individual Card */
+.card {
+    flex: 1 1 calc(33.333% - 20px);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Image within Card */
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+.feedback-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    /* White background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #6a0dad;
+    /* Purple color for heading */
+    text-align: center;
+}
+
+.feedback-form div {
+    margin-bottom: 15px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6a0dad;
+    /* Purple color for labels */
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea,
+.feedback-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.feedback-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.feedback-form select {
+    height: 40px;
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a0dad;
+    /* Purple color for button */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+    background-color: #5a0cb5;
+    /* Darker purple on hover */
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form textarea:focus,
+.feedback-form select:focus {
+    border-color: #6a0dad;
+    /* Purple focus border */
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 13, 173, 0.5);
+    /* Purple shadow */
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    margin: 40px 0;
+    background-color: #ffffff;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #6a0dad;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container for marquee */
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.testimonial-row {
+    display: flex;
+    gap: 30px;
+    animation: marquee-left 40s linear infinite;
+    /* Adjust animation duration as needed */
+   
+}
+
+.marquee-right .testimonial-row {
+    animation: marquee-right 40s linear infinite;
+}
+
+/* Testimonial card styling */
+.testimonial-card {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    color: #333;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card p {
+    margin-bottom: 20px;
+    color: #555;
+    max-height: 180px;
+    overflow-y: auto;
+    white-space: normal;
+}
+
+.testimonial-card h4 {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #6a0dad;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+/* Star Rating Styling */
+.star-rating {
+    color: #f39c12;
+    position: absolute;
+    bottom: 60px;
+    left: 25px;
+}
+
+.star-rating .fa-star {
+    color: #f39c12;
+}
+
+/* Marquee Animation */
+@keyframes marquee-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonial-card {
+        width: 220px;
+    }
+
+    .testimonials h2 {
+        font-size: 24px;
+    }
+}

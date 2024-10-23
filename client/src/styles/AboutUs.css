@@ -1,0 +1,119 @@
+.about-us-container {
+    width: 100%;
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: url('../images/logo.png') no-repeat center center;
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    position: relative;
+    overflow: hidden;
+
+    border: 8px solid transparent;
+    border-image: linear-gradient(45deg, #6A1B9A, #ffffff, #6A1B9A, #ffffff);
+    border-image-slice: 1;
+    animation: rainbowBorder 2s linear infinite;
+}
+
+@keyframes rainbowBorder {
+    0% {
+        border-image-source: linear-gradient(45deg, #6A1B9A, #ffffff, #6A1B9A, #ffffff);
+    }
+
+    25% {
+        border-image-source: linear-gradient(45deg, #ffffff, #6A1B9A, #ffffff, #6A1B9A);
+    }
+
+    50% {
+        border-image-source: linear-gradient(45deg, #6A1B9A, #ffffff, #6A1B9A, #ffffff);
+    }
+
+    75% {
+        border-image-source: linear-gradient(45deg, #ffffff, #6A1B9A, #ffffff, #6A1B9A);
+    }
+
+    100% {
+        border-image-source: linear-gradient(45deg, #6A1B9A, #ffffff, #6A1B9A, #ffffff);
+    }
+}
+
+/* Header style */
+.about-us-header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    /* Ensure header content appears above the background */
+}
+
+.about-us-header h1 {
+    color: #6A1B9A;
+    /* Purple color */
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sound Icon Style */
+.sound-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: #6A1B9A;
+    /* Purple color */
+}
+
+.sound-icon img {
+    width: 24px;
+    /* Adjust size as needed */
+    height: 24px;
+    /* Adjust size as needed */
+}
+
+/* Content area */
+.about-us-content {
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    z-index: 1;
+    /* Ensure content appears above the background */
+    position: relative;
+}
+
+/* Medicine Info Example */
+.medicine-info-example {
+    margin-top: 20px;
+    background-color: none;
+    /* Light purple */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.medicine-info-example h2 {
+    color: #6A1B9A;
+    /* Purple color */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.medicine-info-example p {
+    margin: 5px 0;
+}
+
+/* Footer */
+.about-us-footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1rem;
+    color: #6A1B9A;
+    /* Purple color */
+}

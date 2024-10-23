@@ -1,0 +1,105 @@
+.contact-queries {
+    padding: 20px;
+    background-color: #f4f7f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    /* White background for the container */
+    border: 1px solid #e0e0e0;
+
+}
+
+.contact-queries h2 {
+    font-size: 28px;
+    color: #5a2d82;
+    /* Dark purple color for the heading */
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contact-queries ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-queries li {
+    background-color: #f3e6fa;
+    /* Light purple background for list items */
+    border: 1px solid #c2a1d4;
+    /* Border color in a darker shade of purple */
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-queries li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-queries p {
+    margin: 8px 0;
+    color: #444;
+    font-size: 16px;
+}
+
+.contact-queries p strong {
+    color: #5a2d82;
+    /* Dark purple color for strong text */
+    font-weight: 600;
+}
+
+.contact-queries hr {
+    border: 0;
+    border-top: 1px solid #c2a1d4;
+    /* Purple border color */
+    margin: 20px 0;
+}
+
+.contact-queries .no-queries {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    font-style: italic;
+}
+
+.delete-button {
+    background-color: #8e44ad;
+    /* Purple background for the delete button */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #732d91;
+    /* Darker purple on hover */
+}
+
+.reply-button {
+    background-color: #5a2d82;
+    /* Dark purple background for the reply button */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.reply-button:hover {
+    background-color: #46206f;
+    /* Darker purple on hover */
+}

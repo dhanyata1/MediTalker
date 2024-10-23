@@ -1,0 +1,142 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Adjusted to ensure the container takes at least the full viewport height */
+    background-color: #f8f9fa;
+    padding: 20px;
+    /* Added padding to prevent content from touching the edges on smaller screens */
+    overflow-y: auto;
+   
+}
+
+.signup-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.signup-form .form-group {
+    margin-bottom: 15px;
+}
+
+.signup-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.signup-form .form-group input,
+.signup-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.signup-form .form-group input:focus,
+.signup-form .form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(38, 143, 255, 0.2);
+}
+
+.signup-form .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.signup-form .message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.signup-form .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.signup-form .signup-button,
+.signup-form .cancel-button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute space evenly */
+    gap: 10px;
+    /* Add space between the buttons */
+}
+
+.btn-submit,
+.btn-cancel {
+    flex: 1;
+    /* Make both buttons equal width */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit {
+    background-color: #007bff;
+    /* Blue background for submit */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.btn-submit:disabled {
+    background-color: #6c757d;
+    /* Greyed out when disabled */
+    cursor: not-allowed;
+}
+
+.btn-cancel {
+    margin-left: 5px;
+    background-color: #dc3545;
+    /* Red background for cancel */
+}
+
+.btn-cancel:hover {
+    background-color: #c82333;
+    /* Darker red on hover */
+}
+
+.btn-cancel:focus {
+    outline: none;
+    /* Remove default focus outline */
+}
