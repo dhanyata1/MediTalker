@@ -1,7 +1,7 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
 const path = require('path');
-const User = require(path.join(__dirname, '../models/User'));
+const User = require('../models/User');
 const LoggedInUser = require('../models/LoggedInUser');
 const multer = require('multer');
 
