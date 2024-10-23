@@ -6,10 +6,7 @@ const dotenv = require('dotenv');
 const morgan = require('morgan');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
-
-
 dotenv.config();
-
 const app = express();
 const PORT = process.env.PORT || 5000;
 
