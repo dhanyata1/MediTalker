@@ -10,7 +10,7 @@ const User = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/users');
+                const response = await axios.get('https://meditalker-backend.onrender.com/api/users');
                 setUsers(response.data);
             } catch (err) {
                 console.error('Error fetching users:', err);
@@ -26,7 +26,7 @@ const User = () => {
     const handleDelete = async (userId) => {
         console.log(`Deleting user with ID: ${userId}`);
         try {
-            const response = await axios.delete(`http://localhost:5000/api/users/${userId}`);
+            const response = await axios.delete(`https://meditalker-backend.onrender.com/api/users/${userId}`);
             if (response.status === 200) {
                 setUsers(users.filter(user => user._id !== userId));
             }
