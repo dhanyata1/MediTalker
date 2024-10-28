@@ -179,7 +179,7 @@ const CapturedScreenshots = () => {
 
         const fetchScreenshots = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/screenshot');
+                const response = await axios.get('https://meditalker-backend.onrender.com/api/screenshot');
                 setScreenshots(response.data);
             } catch (error) {
                 console.error('Error fetching screenshots:', error);
@@ -193,7 +193,7 @@ const CapturedScreenshots = () => {
         const imageSrc = screenshots[index].imageSrc;
 
         try {
-            const response = await axios.delete('http://localhost:5000/api/screenshot', { data: { imageSrc } });
+            const response = await axios.delete('https://meditalker-backend.onrender.com/api/screenshot', { data: { imageSrc } });
             console.log(response.data.message);
             setScreenshots((prev) => prev.filter((_, i) => i !== index));
         } catch (error) {
