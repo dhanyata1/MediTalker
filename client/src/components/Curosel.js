@@ -20,7 +20,7 @@ export default function Curosel() {
     // Fetch feedback from backend
     const fetchFeedback = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/feedback/all');
+            const response = await fetch('https://meditalker-frontend.onrender.com/api/feedback/all');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
