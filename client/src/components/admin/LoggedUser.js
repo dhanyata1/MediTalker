@@ -9,7 +9,7 @@ function LoggedUser() {
     useEffect(() => {
         async function fetchLoginData() {
             try {
-                const response = await fetch('http://localhost:5000/api/users/login');
+                const response = await fetch('https://meditalker-backend.onrender.com/api/users/login');
                 const contentType = response.headers.get('content-type');
 
                 console.log('Response status:', response.status);
@@ -38,7 +38,7 @@ function LoggedUser() {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/users/login/${id}`, {
+            const response = await fetch(`https://meditalker-backend.onrender.com/api/users/login/${id}`, {
                 method: 'DELETE',
             });
 
