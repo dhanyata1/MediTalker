@@ -11,7 +11,7 @@ export default function FeedbackForm({ onSubmitSuccess = () => { } }) {
         const feedback = { name, text, rating: Number(rating) }; // Convert rating to number
 
         try {
-            const response = await fetch('http://localhost:5000/api/feedback/submit', {
+            const response = await fetch('https://meditalker-backend.onrender.com/api/feedback/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
