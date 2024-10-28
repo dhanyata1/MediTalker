@@ -20,7 +20,7 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', formData);
+            const response = await axios.post('https://meditalker-backend.onrender.com/api/contact', formData);
             console.log(response.data);
             alert('Your message has been sent successfully!');
             setFormData({
