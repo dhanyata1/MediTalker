@@ -42,7 +42,7 @@ const Scanner = () => {
                 }
 
                 // Send both imageSrc and extracted text to the backend
-                await axios.post('http://localhost:5000/api/screenshot', { imageSrc, text: medicineData });
+                await axios.post('https://meditalker-backend.onrender.com/api/screenshot', { imageSrc, text: medicineData });
                 console.log('Screenshot and text saved');
 
                 // Update local state
@@ -97,11 +97,11 @@ const Scanner = () => {
         console.log(`Fetching medicine info for: ${name}`); // Debugging line
 
         try {
-            const nlpResponse = await axios.post('http://localhost:5000/api/nlp/analyze', { text: name });
+            const nlpResponse = await axios.post('https://meditalker-backend.onrender.com/api/nlp/analyze', { text: name });
             const processedText = nlpResponse.data.answer || name;
             console.log('NLP Response:', processedText);
 
-            const response = await axios.get('http://localhost:5000/api/medicine', {
+            const response = await axios.get('https://meditalker-backend.onrender.com/api/medicine', {
                 params: { name: processedText }
             });
 
