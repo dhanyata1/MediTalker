@@ -8,7 +8,7 @@ export default function Feedback() {
     useEffect(() => {
         const fetchFeedbacks = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/feedback/all');
+                const response = await fetch('https://meditalker-backend.onrender.com/api/feedback/all');
                 if (response.ok) {
                     const data = await response.json();
                     setFeedbacks(data);
@@ -30,7 +30,7 @@ export default function Feedback() {
         const confirmDelete = window.confirm("Are you sure you want to delete this feedback?");
         if (confirmDelete) {
             try {
-                const response = await fetch(`http://localhost:5000/api/feedback/${id}`, {
+                const response = await fetch(`https://meditalker-backend.onrender.com/api/feedback/${id}`, {
                     method: 'DELETE',
                 });
                 if (response.ok) {
