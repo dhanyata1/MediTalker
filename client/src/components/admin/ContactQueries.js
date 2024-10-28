@@ -8,7 +8,7 @@ export default function ContactQueries() {
     useEffect(() => {
         const fetchQueries = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/contact/queries');
+                const response = await axios.get('https://meditalker-backend.onrender.com/api/contact/queries');
                 setQueries(response.data);
             } catch (err) {
                 console.error('Error fetching contact queries:', err);
