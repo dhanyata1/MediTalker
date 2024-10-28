@@ -79,7 +79,7 @@ const Signup = ({ closeModal }) => {
                 data.append(key, formData[key]);
             }
             try {
-                const response = await axios.post('http://localhost:5000/api/auth/signup', data, {
+                const response = await axios.post('https://meditalker-backend.onrender.com/api/auth/signup', data, {
                     headers: {
                         'Content-Type': 'multipart/form-data',
                     },
