@@ -16,7 +16,7 @@ app.use(morgan('combined'));
 app.use(helmet());
 
 app.use(cors({
-    origin: 'http://localhost:3000', // Frontend URL
+    origin: ['http://localhost:3000', 'https://your-frontend-url.com'], // Frontend URL
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow DELETE method
     allowedHeaders: ['Content-Type', 'Authorization']
