@@ -9,7 +9,7 @@ const Alarms = ({ userId }) => {
     useEffect(() => {
         const fetchAlarms = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/alarms/${userId}`);
+                const response = await axios.get(`https://meditalker-backend.onrender.com/api/alarms/${userId}`);
                 setAlarms(response.data);
             } catch (error) {
                 console.error('Error fetching alarms:', error);
