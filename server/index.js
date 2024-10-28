@@ -10,15 +10,22 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+
+const allowedOrigins = process.env.NODE_ENV === 'production' 
+    ? ['https://meditalker-frontend.onrender.com'] 
+    : ['http://localhost:3000'];
+
+
 // Middleware
 app.use(express.json());
 app.use(morgan('combined')); 
 app.use(helmet());
 
+
 app.use(cors({
-    origin: 'https://meditalker-frontend.onrender.com', // Frontend URL
+    origin: allowedOrigins,
     credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow DELETE method
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
