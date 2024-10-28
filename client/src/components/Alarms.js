@@ -22,7 +22,7 @@ const Alarms = ({ userId }) => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/alarms/${id}`);
+            await axios.delete(`https://meditalker-backend.onrender.com/api/alarms/${id}`);
             setAlarms((prevAlarms) => prevAlarms.filter((alarm) => alarm._id !== id));
         } catch (error) {
             console.error('Error deleting alarm:', error);
