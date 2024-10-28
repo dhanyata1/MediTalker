@@ -21,7 +21,7 @@ export default function ContactQueries() {
     const handleDelete = async (id) => {
         console.log('Deleting query with ID:', id); // Log the ID
         try {
-            await axios.delete(`http://localhost:5000/api/contact/queries/${id}`);
+            await axios.delete(`https://meditalker-backend.onrender.com/api/contact/queries/${id}`);
             setQueries(queries.filter(query => query._id !== id));
         } catch (err) {
             console.error('Error deleting contact query:', err);
