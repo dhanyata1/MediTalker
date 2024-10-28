@@ -38,7 +38,7 @@ const Login = ({ closeModal, onLoginSuccess }) => {
         e.preventDefault();
         if (validate()) {
             try {
-                const response = await axios.post('http://localhost:5000/api/auth/login', formData);
+                const response = await axios.post('https://meditalker-backend.onrender.com/api/auth/login', formData);
                 setMessage(response.data.message);
                 if (response.data.success) {
                     // Store user data in local storage
