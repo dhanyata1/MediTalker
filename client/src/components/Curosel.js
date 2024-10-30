@@ -4,6 +4,10 @@ import 'font-awesome/css/font-awesome.min.css';
 import slider1 from '../images/slider1.png';
 import slider2 from '../images/slider2.png';
 import slider3 from '../images/slider3.png';
+
+import firstImage from '../images/first.png';
+import secondImage from '../images/second.png';
+import thirdImage from '../images/third.png';
 import '../styles/Curosel.css';
 import Contact from './Contact';
 import AboutUs from './About';
@@ -81,6 +85,28 @@ export default function Curosel() {
 
             {/* About Us Section */}
             <AboutUs />
+
+                   {/* Showcase Section */}
+            <section className="showcase">
+                <h2>How It Works</h2>
+                <div className="showcase-images">
+                    <div className="showcase-card">
+                        <img src={firstImage} alt="Step 1" />
+                        <h3 className="showcase-card-title">Step 1: Scan Medicine</h3>
+                        <p>Scan the medicine packet to capture its details quickly and accurately.</p>
+                    </div>
+                    <div className="showcase-card">
+                        <img src={secondImage} alt="Step 2" />
+                        <h3 className="showcase-card-title">Step 2: View Stored Results</h3>
+                        <p>Access stored results for easy reference to past scans and details.</p>
+                    </div>
+                    <div className="showcase-card">
+                        <img src={thirdImage} alt="Step 3" />
+                        <h3 className="showcase-card-title">Step 3: Detailed Information</h3>
+                        <p>Get detailed information about each scanned medicine, including usage and dosage.</p>
+                    </div>
+                </div>
+            </section>
 
             {/* Testimonials Section */}
             <section className="testimonials">
